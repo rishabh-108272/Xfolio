@@ -1,0 +1,48 @@
+.services{
+    position:relative;
+    top:150px;
+    color:#fff;
+    width:500px;
+}
+
+h1{
+    font-size: 48px;
+}
+
+h2{
+    font-size:40px;
+}
+
+
+.bttn{
+    text-align: center;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-clip: inherit;
+    border-radius: 15px;
+    color:#f0f2f5;
+    padding:8px;
+    cursor:pointer;
+    width:100px;
+}
+
+#img-1{
+    top:-200px;
+}
+
+#img-2{
+    top:-110px;
+    left:20px;
+}
+
+.gd{
+    width:500px;
+    position:relative;
+    left:650px;
+    top:-400px;
+}
+
+.ui{
+    position:relative;
+    top:-180px;
+}
+

@@ -1,0 +1,38 @@
+
+
+
+.navbar{
+    background-color: black;
+    color:#8c8c8d;
+}
+
+.navbar ul{
+    list-style-type:none;
+    display:flex;
+    flex-direction: row;
+}
+
+.navbar ul li{
+    margin:15px;
+}
+
+
+.logo{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bolder;
+    color:#bcbcbe;
+    font-size:24px;
+    padding-right: 50px;
+}
+
+button{
+    position:relative;
+    left:650px;
+    width:150px;
+    background-color:#f0f2f5;
+    font-weight:500;
+    border-radius: 15px;
+    padding:5px;
+    color:#2e2d2c;
+
+}
