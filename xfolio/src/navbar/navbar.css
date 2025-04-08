@@ -1,8 +1,5 @@
-
-
-
 .navbar{
-    background-color: black;
+    background-color: #161513;
     color:#8c8c8d;
 }
 
@@ -14,6 +11,11 @@
 
 .navbar ul li{
     margin:15px;
+    cursor:pointer;
+}
+
+.navbar ul li:hover{
+    color:white;
 }
 
 

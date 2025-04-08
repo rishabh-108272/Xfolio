@@ -1,0 +1,76 @@
+body{
+    background-color: #161513;
+}
+
+.contact{
+    position:relative;
+    top:100px;
+    left:150px;
+}
+
+.des3{
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    background-clip: text;
+    color: transparent;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+#mail{
+    width:20px;
+    height:20px;
+}
+
+#phone{
+    width:20px;
+    height:20px;
+}
+
+.details1{
+    display:flex;
+    gap:10px;
+}
+
+.details2{
+    display:flex;
+    gap:10px;
+}
+
+.custom-form {
+    position: relative;
+    top:-150px;
+    right:-600px;
+    max-width: 600px;
+    color: white;
+  }
+  
+  .input-dark {
+    background-color: #101014;
+    border: none;
+    color: white;
+    padding: 12px;
+    border-radius: 6px;
+    margin-top: 5px;
+  }
+  
+  .input-dark::placeholder {
+    color: #777;
+  }
+  
+  .submit-button {
+    left:5px;
+    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+    width:30%;
+    color: white;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 999px;
+    font-weight: bold;
+    transition: 0.3s ease;
+  }
+  
+  .submit-button:hover {
+    opacity: 0.9;
+  }
+  
+

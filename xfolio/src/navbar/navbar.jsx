@@ -1,5 +1,5 @@
 import React from "react";
-import Home from '../home/home';
+// import Home from '../home/home';
 import "../../node_modules/bootstrap/dist/css/bootstrap.css"
 import "../../node_modules/bootstrap/dist/css/bootstrap-grid.css"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -14,14 +14,18 @@ export default function Navbar(){
       <ul>
         <li className="logo">XFOLIO.</li>
         <li>Home</li>
-        <li>Services</li>
         <li>Projects</li>
         <li>About</li>
         <li>Blog</li>
-        <li><button>LET'S TALK</button></li>
+        <li><button>
+        <a href="https:/" target="_blank" rel="noopener noreferrer" style={{textDecoration:"none", color:"#2e2d2c"}}>
+          LET'S TALK
+        </a>
+          </button></li>
+    
       </ul>
       </div>
-      <Home /> 
+      {/* <Home />  */}
     </div>
     )
 }

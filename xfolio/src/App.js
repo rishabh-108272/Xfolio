@@ -1,16 +1,23 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Navbar from './navbar/navbar.jsx';
 import Home from './home/home.jsx';
-import Services from './services/services.jsx';
+import Contact from './contact/contact.jsx';
+import Footer from './footer/footer.jsx';
+import Blog from './blog/blog.jsx';
+import Projects from './Projects/projects.jsx';
 function App() {
   return (
     <BrowserRouter>
+    <Navbar />
     <Routes>
-      <Route path="/" element={<Navbar />}></Route>
-      <Route path="/home" element={<Home />}></Route>
-      <Route path="/services" element={<Services />}></Route>
+      <Route path="/" element={<Home />} />
+      <Route path="/home" element={<Home />} />
+      <Route path="/contact" element={<Contact />} />
+      <Route path="/blog" element={<Blog />} />
+      <Route path="/projects" element={<Projects />} />
     </Routes>
-    </BrowserRouter>
+    <Footer />
+  </BrowserRouter>
   );
 }
 

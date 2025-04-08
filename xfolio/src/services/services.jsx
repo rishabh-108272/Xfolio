@@ -2,7 +2,7 @@ import React from 'react';
 import Image1 from '../images/image1.png'
 import Image2 from '../images/image2.png'
 import Image3 from '../images/image3.png'
-import Project from '../Projects/projects';
+
 import "../../node_modules/bootstrap/dist/css/bootstrap.css"
 import "../../node_modules/bootstrap/dist/css/bootstrap-grid.css"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -13,7 +13,7 @@ export default function Services(){
     return(
         <div className="container">
             <div className="services">
-            <h1>Our <span className='des'>Services</span></h1>
+            <h1>My <span className='des'>Services</span></h1>
              <br/>
              <br/>
              <br/>
@@ -51,7 +51,7 @@ export default function Services(){
             </div>
             <br/>
             <br/>
-            <Project />
+           
         </div>
     )
 }

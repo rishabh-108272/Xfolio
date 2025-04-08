@@ -2,7 +2,6 @@ import React from 'react'
 import Image from '../images/premium_photo-1668104454432-69c53f7196fc.avif'
 import Image1 from '../images/premium_photo-1674478556514-14b546c8a34e.avif'
 import Image2 from '../images/image4.png'
-import Footer from '../footer/footer'
 import "../../node_modules/bootstrap/dist/css/bootstrap.css"
 import "../../node_modules/bootstrap/dist/css/bootstrap-grid.css"
 import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
@@ -14,7 +13,7 @@ export default function Projects(){
          <div className="projects">
             <h2 className='des1'>Selected Projects</h2>
             <br/>
-            <p>I do deep market research before starting any project which gives an <br/>
+            <p style={{color:"white"}}>I do deep market research before starting any project which gives an <br/>
             unfiar advantage to bring the best results for client.</p>
             <img src={Image} alt="img6" id="img6" width="1000px" height="600px" />
             <div className='bt'>
@@ -78,7 +77,6 @@ export default function Projects(){
          </div>
          <br/>
          <br/>
-         <Footer />
 
         </div>
     );
