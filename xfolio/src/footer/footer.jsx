@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 import './footer.css';
 
 export default function Footer() {
@@ -12,9 +13,9 @@ export default function Footer() {
         <p className='logo'>XFOLIO.</p>
         
         <ul className="footer-links">
-          <li>Home</li>
-          <li>About</li>
-          <li>Contact</li>
+         <Link to="/home"><li>Home</li></Link> 
+         <Link to="/about"><li>About</li></Link> 
+         <Link to="/contact"><li>Contact</li></Link> 
         </ul>
 
         <p className="copyright">&copy; Rishabh Verma</p>
