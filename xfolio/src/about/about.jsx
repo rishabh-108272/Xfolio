@@ -85,7 +85,7 @@ problems, and drive innovation in a fast-paced environment.
             
             <div className="cta-section">
                 <h1>See the impact of good,<br /> conversion-oriented <br /> design on your business.</h1>
-                <a href="www.linkedin.com/in/rishabh-verma-875214247" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/rishabh-verma-875214247/" target="_blank" rel="noopener noreferrer">
                 <div className="cta-link">
                     <h1 className='des2'>Let's Connect</h1>
                     <div className="line1"></div>
