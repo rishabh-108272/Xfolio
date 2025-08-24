@@ -43,8 +43,8 @@ problems, and drive innovation in a fast-paced environment.
                             <h1>3</h1>
                         </div>
                         <div className="stat-item">
-                            <p className='des2'>EXPERIENCE</p>
-                            <h1>2+ YEARS</h1>
+                            <p className='des2'>INTERNSHIP</p>
+                            <h1>2 MONTHS</h1>
                         </div>
                         <div className="stat-item">
                             <p className='des2'>SUCCESS RATE</p>
