@@ -1,76 +1,111 @@
-body{
-    background-color: #161513;
+body {
+  background-color: #161513;
 }
 
-.contact{
-    position:relative;
-    top:100px;
-    left:150px;
+/* --- Main Page Container --- */
+.contact-page-container {
+  /* Replaces 'position: relative; top: 100px;' */
+  margin-top: 100px;
+  margin-bottom: 100px;
+  padding: 0 5%; /* Responsive padding */
 }
 
-.des3{
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    background-clip: text;
-    color: transparent;
-    font-weight: bolder;
-    font-size: 50px;
+/* --- Responsive Grid Layout --- */
+.contact-grid {
+  display: grid;
+  /* Creates two equal columns on larger screens */
+  grid-template-columns: 1fr 1fr;
+  gap: 60px; /* Space between the two columns */
+  align-items: center; /* Vertically align content */
 }
 
-#mail{
-    width:20px;
-    height:20px;
+/* --- Left Column: Contact Info --- */
+.contact-info p {
+  color: white;
+  line-height: 1.7;
 }
 
-#phone{
-    width:20px;
-    height:20px;
+.des3 {
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  background-clip: text;
+  color: transparent;
+  font-weight: bolder;
+  font-size: 50px;
 }
 
-.details1{
-    display:flex;
-    gap:10px;
+.details {
+  display: flex;
+  align-items: center;
+  gap: 15px; /* Increased gap for better spacing */
+  margin-top: 15px;
 }
 
-.details2{
-    display:flex;
-    gap:10px;
+.details p {
+  margin: 0; /* Remove default paragraph margin */
 }
 
-.custom-form {
-    position: relative;
-    top:-150px;
-    right:-600px;
-    max-width: 600px;
-    color: white;
+.contact-icon {
+  width: 20px;
+  height: 20px;
+}
+
+/* --- Right Column: Form --- */
+.contact-form {
+  width: 100%; /* Form will take full width of its grid column */
+  color: white;
+}
+
+.contact-form label {
+  display: block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+ 
+.input-dark {
+  background-color: #101014;
+  border: 1px solid #333; /* Added a subtle border */
+  color: white;
+  padding: 12px;
+  border-radius: 6px;
+  width: 100%;
+}
+ 
+.input-dark::placeholder {
+  color: #777;
+}
+ 
+.submit-button {
+  background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+  width: 100%; /* Button takes full width on mobile */
+  max-width: 250px; /* But not too wide on desktop */
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+  margin-top: 25px;
+}
+ 
+.submit-button:hover {
+  opacity: 0.9;
+}
+
+
+/* --- Media Query for Responsiveness --- */
+@media (max-width: 992px) {
+  .contact-grid {
+    /* Stacks the columns on top of each other */
+    grid-template-columns: 1fr;
+    gap: 50px;
   }
-  
-  .input-dark {
-    background-color: #101014;
-    border: none;
-    color: white;
-    padding: 12px;
-    border-radius: 6px;
-    margin-top: 5px;
-  }
-  
-  .input-dark::placeholder {
-    color: #777;
-  }
-  
-  .submit-button {
-    left:5px;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    width:30%;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 999px;
-    font-weight: bold;
-    transition: 0.3s ease;
-  }
-  
-  .submit-button:hover {
-    opacity: 0.9;
-  }
-  
 
+  .contact-info {
+    text-align: center; /* Center the text on mobile */
+  }
+
+  .details {
+    justify-content: center; /* Center the icon and text within the details div */
+  }
+}

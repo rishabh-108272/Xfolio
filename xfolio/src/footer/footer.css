@@ -1,38 +1,65 @@
-.line{
-    width:100%;
-    height:2px;
-    background-color:#fff;
+/* --- General Footer Styles (Kept your original design) --- */
+.footer-container {
+  /* Replaced position:relative and top:200px with a margin for better layout flow */
+  margin-top: 150px; 
+  padding: 20px 5%; /* Use percentage for responsive padding */
+  color: #8c8c8d;
 }
 
-.footer{
-    position:relative;
-    top:120px;
-    color:#8c8c8d;
+.line {
+  width: 100%;
+  height: 1px; /* Made the line a bit thinner */
+  background-color: #555; /* A slightly softer color */
 }
 
-.logo{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bolder;
-    color:#bcbcbe;
-    font-size:24px;
-    padding-right: 50px;
+/* Key change: Use Flexbox to align footer items */
+.footer-content {
+  display: flex;
+  justify-content: space-between; /* Spaces items out evenly */
+  align-items: center;
+  padding-top: 20px;
+  flex-wrap: wrap; /* Allows items to wrap on medium screens */
+  gap: 20px; /* Adds space between items when they wrap */
 }
 
-.footer ul{
-    list-style-type:none;
-    display:flex;
-    flex-direction: row;
+.logo {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  color: #bcbcbe;
+  font-size: 24px;
+  margin: 0; /* Reset default margin */
 }
 
-.footer ul li{
-    margin:15px;
-    cursor:pointer;
+.footer-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
 }
 
-.footer ul li:hover{
-    color:white;
+.footer-links li {
+  margin: 0 15px; /* Use margin 0 for top/bottom */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.footer-links li:hover {
+  color: white;
+}
+
+.copyright {
+  margin: 0; /* Reset default margin */
+  font-size: 0.9rem;
 }
 
 
-
-
+/* --- Responsive Styles (for screens 768px or less) --- */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center them */
+    gap: 25px; /* Increase space between stacked items */
+    text-align: center;
+  }
+}

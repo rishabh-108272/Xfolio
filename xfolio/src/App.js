@@ -5,6 +5,7 @@ import Contact from './contact/contact.jsx';
 import Footer from './footer/footer.jsx';
 import Blog from './blog/blog.jsx';
 import Projects from './Projects/projects.jsx';
+import About from "./about/about.jsx";
 function App() {
   return (
     <BrowserRouter>
@@ -15,6 +16,7 @@ function App() {
       <Route path="/contact" element={<Contact />} />
       <Route path="/blog" element={<Blog />} />
       <Route path="/projects" element={<Projects />} />
+      <Route path="/about" element={<About/>}/>
     </Routes>
     <Footer />
   </BrowserRouter>

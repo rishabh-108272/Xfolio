@@ -1,23 +1,24 @@
-import React from 'react'
-import './footer.css'
+import React from 'react';
+import './footer.css';
 
-export default function Footer(){
-    return(
-        <div className="container">
-            <div className="footer">
-                <div className="line"></div>
-                <br/>
-               
-                <p className='logo'>XFOLIO.</p>
-                <div className="row" style={{position:"relative", top:"-60px",left:"900px",width:"280px"}}>
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Contact</li>
-                    </ul>
-                </div>
-                <p style={{position:"relative", top:"-80px"}}>&copy;Rishabh Verma</p>
-            </div>
-        </div>
-    )
+export default function Footer() {
+  return (
+    // Use a semantic <footer> tag
+    <footer className="footer-container">
+      <div className="line"></div>
+      
+      {/* This div will be our flex container */}
+      <div className="footer-content">
+        <p className='logo'>XFOLIO.</p>
+        
+        <ul className="footer-links">
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+
+        <p className="copyright">&copy; Rishabh Verma</p>
+      </div>
+    </footer>
+  );
 }

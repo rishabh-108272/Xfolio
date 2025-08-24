@@ -1,84 +1,89 @@
-import React from 'react'
-import Image from '../images/premium_photo-1668104454432-69c53f7196fc.avif'
-import Image1 from '../images/premium_photo-1674478556514-14b546c8a34e.avif'
-import Image2 from '../images/image4.png'
-import "../../node_modules/bootstrap/dist/css/bootstrap.css"
-import "../../node_modules/bootstrap/dist/css/bootstrap-grid.css"
-import "../../node_modules/bootstrap/dist/css/bootstrap.min.css"
-import './projects.css'
+import Image from '../images/image.png';
+import Image1 from '../images/Screenshot 2025-08-24 112420.png';
+import Image2 from '../images/Screenshot 2025-08-24 114913.png';
+import './projects.css';
 
-export default function Projects(){
-    return(
-        <div className="container">
-         <div className="projects">
-            <h2 className='des1'>Selected Projects</h2>
-            <br/>
-            <p style={{color:"white"}}>I do deep market research before starting any project which gives an <br/>
-            unfiar advantage to bring the best results for client.</p>
-            <img src={Image} alt="img6" id="img6" width="1000px" height="600px" />
-            <div className='bt'>
-                View Case Study
+export default function Projects() {
+  return (
+    <div className="projects-container">
+      <div className="projects-header">
+        <h2 className='des1'>Selected Projects</h2>
+        <p>
+          I do deep research before starting any project which gives an
+          unfair advantage to bring the best results out for the team.
+        </p>
+      </div>
+
+      {/* This grid will hold all the project cards */}
+      <div className="projects-grid">
+
+        {/* --- Project Card 1 --- */}
+        <div className="project-card">
+        
+         <div className="image-container">
+            <img src={Image} alt="Cicu Marketing Project" />
+            <a href="https://github.com/rishabh-108272/Career-Counsellor-Chatbot/tree/main" target="_blank" rel="noopener noreferrer">
+            <div className='view-study-overlay'>
+                 View Project
             </div>
-            <div className="content">
-            <h2>Cicu Marketing</h2>
+            </a>
+          </div>
+      
+          <div className="project-content">
+            <h2>Pathwise:AI Powered Career Counselor</h2>
             <h3>Technology</h3>
-            <div className="row">
-            <div className="bttn1">Web Design</div>  <div className="bttn1">UI/UX Design</div>
+            <div className="tag-container">
+              <div className="bttn1">RAG</div>
+              <div className="bttn1">LLM Fine Tuning</div>
+              <div className="bttn1">Django</div>
             </div>
-             
-            </div>
-            <img src={Image1} alt="img7" id="img7" width="1000px" height="600px" />
-            <br/>
-            <div className="hd">
-            <h3 className='des2'>Rishabh Verma</h3>
-            <h2>Creative UI/ <br/>UX Designer</h2>
-            </div>
-            <div className="content1">
-                <h4>Lorem ipsum dolor cortica ipsum dolor lartus concertus ipsum de <br/> 
-             lorem lartus cortus surtus dorem lupsum nulla de marius de at <br/>
-             ulam carpur ac lorem ipsum.</h4>
-
-             <p>Lorem ipsum dolor cortica ipsum dolor lartus concertus ipsum de <br/> 
-             lorem lartus cortus surtus dorem lupsum nulla de</p>
-            <p className='des2'>PROJECTS DONE</p> <h1>15+</h1> <p className='des2'>EXPERIENCE</p> <h1>7+ YEARS</h1> <p className='des2'>CLIENTS SATISFACTION</p> <h1>100%</h1>
-            
-            </div>
-
-            <img src={Image2} alt="img8" id="img8" width="1200px" height="800px" />
-            <br/>
-            <br/>
-            <br/>
-            <h2 style={{color:"#fff",marginTop:"30px"}}>What I do.</h2>
-
-            <div className="row">
-                <div className="box1" style={{textAlign:"center",color:"#fff"}}><svg height="100" viewBox="175.7 78 490.6 436.9" width="100" xmlns="http://www.w3.org/2000/svg"><g fill="#61dafb"><path d="m666.3 296.5c0-32.5-40.7-63.3-103.1-82.4 14.4-63.6 8-114.2-20.2-130.4-6.5-3.8-14.1-5.6-22.4-5.6v22.3c4.6 0 8.3.9 11.4 2.6 13.6 7.8 19.5 37.5 14.9 75.7-1.1 9.4-2.9 19.3-5.1 29.4-19.6-4.8-41-8.5-63.5-10.9-13.5-18.5-27.5-35.3-41.6-50 32.6-30.3 63.2-46.9 84-46.9v-22.3c-27.5 0-63.5 19.6-99.9 53.6-36.4-33.8-72.4-53.2-99.9-53.2v22.3c20.7 0 51.4 16.5 84 46.6-14 14.7-28 31.4-41.3 49.9-22.6 2.4-44 6.1-63.6 11-2.3-10-4-19.7-5.2-29-4.7-38.2 1.1-67.9 14.6-75.8 3-1.8 6.9-2.6 11.5-2.6v-22.3c-8.4 0-16 1.8-22.6 5.6-28.1 16.2-34.4 66.7-19.9 130.1-62.2 19.2-102.7 49.9-102.7 82.3 0 32.5 40.7 63.3 103.1 82.4-14.4 63.6-8 114.2 20.2 130.4 6.5 3.8 14.1 5.6 22.5 5.6 27.5 0 63.5-19.6 99.9-53.6 36.4 33.8 72.4 53.2 99.9 53.2 8.4 0 16-1.8 22.6-5.6 28.1-16.2 34.4-66.7 19.9-130.1 62-19.1 102.5-49.9 102.5-82.3zm-130.2-66.7c-3.7 12.9-8.3 26.2-13.5 39.5-4.1-8-8.4-16-13.1-24-4.6-8-9.5-15.8-14.4-23.4 14.2 2.1 27.9 4.7 41 7.9zm-45.8 106.5c-7.8 13.5-15.8 26.3-24.1 38.2-14.9 1.3-30 2-45.2 2-15.1 0-30.2-.7-45-1.9-8.3-11.9-16.4-24.6-24.2-38-7.6-13.1-14.5-26.4-20.8-39.8 6.2-13.4 13.2-26.8 20.7-39.9 7.8-13.5 15.8-26.3 24.1-38.2 14.9-1.3 30-2 45.2-2 15.1 0 30.2.7 45 1.9 8.3 11.9 16.4 24.6 24.2 38 7.6 13.1 14.5 26.4 20.8 39.8-6.3 13.4-13.2 26.8-20.7 39.9zm32.3-13c5.4 13.4 10 26.8 13.8 39.8-13.1 3.2-26.9 5.9-41.2 8 4.9-7.7 9.8-15.6 14.4-23.7 4.6-8 8.9-16.1 13-24.1zm-101.4 106.7c-9.3-9.6-18.6-20.3-27.8-32 9 .4 18.2.7 27.5.7 9.4 0 18.7-.2 27.8-.7-9 11.7-18.3 22.4-27.5 32zm-74.4-58.9c-14.2-2.1-27.9-4.7-41-7.9 3.7-12.9 8.3-26.2 13.5-39.5 4.1 8 8.4 16 13.1 24s9.5 15.8 14.4 23.4zm73.9-208.1c9.3 9.6 18.6 20.3 27.8 32-9-.4-18.2-.7-27.5-.7-9.4 0-18.7.2-27.8.7 9-11.7 18.3-22.4 27.5-32zm-74 58.9c-4.9 7.7-9.8 15.6-14.4 23.7-4.6 8-8.9 16-13 24-5.4-13.4-10-26.8-13.8-39.8 13.1-3.1 26.9-5.8 41.2-7.9zm-90.5 125.2c-35.4-15.1-58.3-34.9-58.3-50.6s22.9-35.6 58.3-50.6c8.6-3.7 18-7 27.7-10.1 5.7 19.6 13.2 40 22.5 60.9-9.2 20.8-16.6 41.1-22.2 60.6-9.9-3.1-19.3-6.5-28-10.2zm53.8 142.9c-13.6-7.8-19.5-37.5-14.9-75.7 1.1-9.4 2.9-19.3 5.1-29.4 19.6 4.8 41 8.5 63.5 10.9 13.5 18.5 27.5 35.3 41.6 50-32.6 30.3-63.2 46.9-84 46.9-4.5-.1-8.3-1-11.3-2.7zm237.2-76.2c4.7 38.2-1.1 67.9-14.6 75.8-3 1.8-6.9 2.6-11.5 2.6-20.7 0-51.4-16.5-84-46.6 14-14.7 28-31.4 41.3-49.9 22.6-2.4 44-6.1 63.6-11 2.3 10.1 4.1 19.8 5.2 29.1zm38.5-66.7c-8.6 3.7-18 7-27.7 10.1-5.7-19.6-13.2-40-22.5-60.9 9.2-20.8 16.6-41.1 22.2-60.6 9.9 3.1 19.3 6.5 28.1 10.2 35.4 15.1 58.3 34.9 58.3 50.6-.1 15.7-23 35.6-58.4 50.6z"/><circle cx="420.9" cy="296.5" r="45.7"/></g></svg>
-                <h3>React</h3>
-                </div>
-                <div className="box2" style={{textAlign:"center",color:"#fff"}}><svg height="100" viewBox="8.738 -5.03622834 17.45992422 39.40619484" width="100" xmlns="http://www.w3.org/2000/svg"><path d="m15.9.087.854 1.604c.192.296.4.558.645.802a22.406 22.406 0 0 1 2.004 2.266c1.447 1.9 2.423 4.01 3.12 6.292.418 1.394.645 2.824.662 4.27.07 4.323-1.412 8.035-4.4 11.12a12.7 12.7 0 0 1 -1.57 1.342c-.296 0-.436-.227-.558-.436a3.589 3.589 0 0 1 -.436-1.255c-.105-.523-.174-1.046-.14-1.586v-.244c-.024-.052-.285-24.052-.181-24.175z" fill="#599636"/><path d="m15.9.034c-.035-.07-.07-.017-.105.017.017.35-.105.662-.296.96-.21.296-.488.523-.767.767-1.55 1.342-2.77 2.963-3.747 4.776-1.3 2.44-1.97 5.055-2.16 7.808-.087.993.314 4.497.627 5.508.854 2.684 2.388 4.933 4.375 6.885.488.47 1.01.906 1.55 1.325.157 0 .174-.14.21-.244a4.78 4.78 0 0 0 .157-.68l.35-2.614z" fill="#6cac48"/><path d="m16.754 28.845c.035-.4.227-.732.436-1.063-.21-.087-.366-.26-.488-.453a3.235 3.235 0 0 1 -.26-.575c-.244-.732-.296-1.5-.366-2.248v-.453c-.087.07-.105.662-.105.75a17.37 17.37 0 0 1 -.314 2.353c-.052.314-.087.627-.28.906 0 .035 0 .07.017.122.314.924.4 1.865.453 2.824v.35c0 .418-.017.33.33.47.14.052.296.07.436.174.105 0 .122-.087.122-.157l-.052-.575v-1.604c-.017-.28.035-.558.07-.82z" fill="#c2bfbf"/></svg>
-                <h3>MongoDB</h3>
-                </div>
-                <div className="box3" style={{textAlign:"center",color:"#fff"}}><svg width="100" height="100" viewBox="0 0 256 282" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMinYMin meet"><g fill="#8CC84B"><path d="M116.504 3.58c6.962-3.985 16.03-4.003 22.986 0 34.995 19.774 70.001 39.517 104.99 59.303 6.581 3.707 10.983 11.031 10.916 18.614v118.968c.049 7.897-4.788 15.396-11.731 19.019-34.88 19.665-69.742 39.354-104.616 59.019-7.106 4.063-16.356 3.75-23.24-.646-10.457-6.062-20.932-12.094-31.39-18.15-2.137-1.274-4.546-2.288-6.055-4.36 1.334-1.798 3.719-2.022 5.657-2.807 4.365-1.388 8.374-3.616 12.384-5.778 1.014-.694 2.252-.428 3.224.193 8.942 5.127 17.805 10.403 26.777 15.481 1.914 1.105 3.852-.362 5.488-1.274 34.228-19.345 68.498-38.617 102.72-57.968 1.268-.61 1.969-1.956 1.866-3.345.024-39.245.006-78.497.012-117.742.145-1.576-.767-3.025-2.192-3.67-34.759-19.575-69.5-39.18-104.253-58.76a3.621 3.621 0 0 0-4.094-.006C91.2 39.257 56.465 58.88 21.712 78.454c-1.42.646-2.373 2.071-2.204 3.653.006 39.245 0 78.497 0 117.748a3.329 3.329 0 0 0 1.89 3.303c9.274 5.259 18.56 10.481 27.84 15.722 5.228 2.814 11.647 4.486 17.407 2.33 5.083-1.823 8.646-7.01 8.549-12.407.048-39.016-.024-78.038.036-117.048-.127-1.732 1.516-3.163 3.2-3 4.456-.03 8.918-.06 13.374.012 1.86-.042 3.14 1.823 2.91 3.568-.018 39.263.048 78.527-.03 117.79.012 10.464-4.287 21.85-13.966 26.97-11.924 6.177-26.662 4.867-38.442-1.056-10.198-5.09-19.93-11.097-29.947-16.55C5.368 215.886.555 208.357.604 200.466V81.497c-.073-7.74 4.504-15.197 11.29-18.85C46.768 42.966 81.636 23.27 116.504 3.58z"/><path d="M146.928 85.99c15.21-.979 31.493-.58 45.18 6.913 10.597 5.742 16.472 17.793 16.659 29.566-.296 1.588-1.956 2.464-3.472 2.355-4.413-.006-8.827.06-13.24-.03-1.872.072-2.96-1.654-3.195-3.309-1.268-5.633-4.34-11.212-9.642-13.929-8.139-4.075-17.576-3.87-26.451-3.785-6.479.344-13.446.905-18.935 4.715-4.214 2.886-5.494 8.712-3.99 13.404 1.418 3.369 5.307 4.456 8.489 5.458 18.33 4.794 37.754 4.317 55.734 10.626 7.444 2.572 14.726 7.572 17.274 15.366 3.333 10.446 1.872 22.932-5.56 31.318-6.027 6.901-14.805 10.657-23.56 12.697-11.647 2.597-23.734 2.663-35.562 1.51-11.122-1.268-22.696-4.19-31.282-11.768-7.342-6.375-10.928-16.308-10.572-25.895.085-1.619 1.697-2.748 3.248-2.615 4.444-.036 8.888-.048 13.332.006 1.775-.127 3.091 1.407 3.182 3.08.82 5.367 2.837 11 7.517 14.182 9.032 5.827 20.365 5.428 30.707 5.591 8.568-.38 18.186-.495 25.178-6.158 3.689-3.23 4.782-8.634 3.785-13.283-1.08-3.925-5.186-5.754-8.712-6.95-18.095-5.724-37.736-3.647-55.656-10.12-7.275-2.571-14.31-7.432-17.105-14.906-3.9-10.578-2.113-23.662 6.098-31.765 8.006-8.06 19.563-11.164 30.551-12.275z"/></g></svg> 
-                <h3>NodeJs</h3>
-                 </div>
-                <div className="box4" style={{textAlign:"center",color:"#fff"}}><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0 0 48 48">
-<linearGradient id="70AWaG9FpYs2yn8LzRfdUa_J0SgMWzAxqFj_gr1" x1="17.151" x2="29.996" y1="8.498" y2="37.571" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#f09701"></stop><stop offset="1" stop-color="#e36001"></stop></linearGradient><path fill="url(#70AWaG9FpYs2yn8LzRfdUa_J0SgMWzAxqFj_gr1)" d="M8.108,18.006C10.534,11.579,16.724,7,24,7c7.276,0,13.466,4.579,15.892,11.006	C36.653,14.6,30.757,12.313,24,12.313C17.243,12.313,11.347,14.6,8.108,18.006z M24,35.688c-6.757,0-12.653-2.287-15.892-5.693	C10.534,36.421,16.724,41,24,41c7.276,0,13.466-4.579,15.892-11.006C36.653,33.4,30.757,35.688,24,35.688z"></path><linearGradient id="70AWaG9FpYs2yn8LzRfdUb_J0SgMWzAxqFj_gr2" x1="1.319" x2="25.671" y1="44.651" y2="1.059" gradientUnits="userSpaceOnUse"><stop offset="0" stop-color="#a1aab3"></stop><stop offset="1" stop-color="#8f979e"></stop></linearGradient><path fill="url(#70AWaG9FpYs2yn8LzRfdUb_J0SgMWzAxqFj_gr2)" d="M39.512,4.744c0,1.515-1.228,2.744-2.744,2.744s-2.744-1.228-2.744-2.744S35.253,2,36.768,2	S39.512,3.228,39.512,4.744z M10.976,40.415c-1.818,0-3.293,1.474-3.293,3.293c0,1.818,1.474,3.293,3.293,3.293	s3.293-1.474,3.293-3.293C14.268,41.889,12.794,40.415,10.976,40.415z M7.683,6.39c-1.212,0-2.195,0.983-2.195,2.195	s0.983,2.195,2.195,2.195s2.195-0.983,2.195-2.195S8.895,6.39,7.683,6.39z"></path>
-</svg>
-                <h3>Jupyter</h3>
-                </div>
-            </div>
-            
-            <div className="content3">
-                <h1>See the impact of good,<br/> conversion -oriented <br/> design on your business.</h1>
-                <br/>
-                <br/>
-                <div className="des2" style={{cursor:"pointer"}}><h1 >Let's Work Together </h1></div>
-                <div className="line1"></div>
-            </div>
-         </div>
-         <br/>
-         <br/>
-
+          </div>
         </div>
-    );
 
+        {/* --- Project Card 2 --- */}
+        <div className="project-card">
+          <div className="image-container">
+            <img src={Image1} alt="Another Project" />
+              <a href="https://github.com/rishabh-108272/Early-Identification-Of-Diabetic-Foot-Ulcer" target="_blank" rel="noopener noreferrer">
+            <div className='view-study-overlay'>
+                 View Project
+            </div>
+            </a>
+          </div>
+           <div className="project-content">
+            <h2>Diabetic Foot Ulcer Early Identification</h2>
+            <h3>Research</h3>
+            <div className="tag-container">
+              <div className="bttn1">Machine Learning</div>
+              <div className="bttn1">Data Analytics</div>
+               <div className="bttn1">Data Preprocessing</div>
+            </div>
+          </div>
+        </div>
+
+ {/* --- Project Card 3 --- */}
+          <div className="project-card">
+          <div className="image-container">
+            <img src={Image2} alt="Another Project" />
+             <a href="https://github.com/rishabh-108272/Biomarker_Classification_And_Prediction" target="_blank" rel="noopener noreferrer">
+            <div className='view-study-overlay'>
+                 View Project
+            </div>
+            </a>
+          </div>
+           <div className="project-content">
+            <h2>Lung Cancer Classification Using Explainable AI</h2>
+            <h3>Research</h3>
+            <div className="tag-container">
+              <div className="bttn1">Machine Learning</div>
+              <div className="bttn1">Data Analytics</div>
+               <div className="bttn1">Data Preprocessing</div>
+               <div className="bttn1">XAI</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  );
 }

@@ -1,40 +1,124 @@
-.navbar{
+/* --- General Navbar Styles (Kept your original design) --- */
+.navbar {
+  background-color: #161513;
+  color: #8c8c8d;
+  padding: 10px 0; /* Added some padding */
+}
+
+/* Use flexbox to align logo, links, and button */
+.navbar .container-fluid {
+  display: flex;
+  justify-content: space-between; /* This is key! */
+  align-items: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+  padding: 0;
+  align-items: center; /* Vertically center items */
+}
+
+.nav-item {
+  text-decoration: none;
+  color: #bcbcbe;
+  margin: 0 15px; /* Replaced margin on li */
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-item:hover,
+.nav-item li:hover {
+  color: white;
+}
+
+.logo {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-weight: bolder;
+  color: #bcbcbe;
+  font-size: 24px;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+button {
+  width: 150px;
+  background-color: #f0f2f5;
+  font-weight: 500;
+  border-radius: 30px;
+  padding: 5px;
+  color: #2e2d2c;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #dcdfe2;
+}
+
+/* Remove margin from the button's list item */
+.talk-button-li {
+  margin-left: 15px;
+}
+
+/* --- Hamburger Menu Styles --- */
+.hamburger {
+  display: none; /* Hidden by default on desktop */
+  flex-direction: column;
+  cursor: pointer;
+}
+
+.hamburger .line {
+  width: 25px;
+  height: 3px;
+  background-color: #bcbcbe;
+  margin: 4px 0;
+}
+
+/* --- Responsive Styles (for screens 768px or less) --- */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex; /* Show the hamburger icon */
+    position: absolute; /* Keep it in place */
+    top: 20px;
+    right: 20px;
+    z-index: 2;
+  }
+
+  .nav-links {
+    display: none; /* Hide the links by default */
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     background-color: #161513;
-    color:#8c8c8d;
-}
+    padding-top: 60px; /* Space for the logo */
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+  }
 
-.navbar ul{
-    list-style-type:none;
-    display:flex;
-    flex-direction: row;
-}
+  .nav-links.active {
+    display: flex; /* Show the menu when active */
+  }
 
-.navbar ul li{
-    margin:15px;
-    cursor:pointer;
-}
+  .nav-item {
+    margin: 20px 0; /* Add vertical spacing for mobile */
+    font-size: 1.2rem;
+  }
 
-.navbar ul li:hover{
-    color:white;
-}
-
-
-.logo{
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    font-weight: bolder;
-    color:#bcbcbe;
-    font-size:24px;
-    padding-right: 50px;
-}
-
-button{
-    position:relative;
-    left:650px;
-    width:150px;
-    background-color:#f0f2f5;
-    font-weight:500;
-    border-radius: 15px;
-    padding:5px;
-    color:#2e2d2c;
-
+  .talk-button-li {
+    margin-top: 20px;
+    margin-left: 0;
+    
+  }
 }

@@ -1,57 +1,212 @@
-body{
-    background-color: #161513;
-}
-
-.home{
-    height:500px;
-    position: relative;
-    top:150px;
-}
-
-.des-1{
-    font-size:48px;
-    color:#edeff2;
-}
-
-
-
-.des{
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    background-clip: text;
-    color: transparent;
-}
-
-
-.git{
-    position: relative;
-    width:20%;
-    text-align: center;
-    background-image: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
-    background-clip: inherit;
-    border-radius: 15px;
-    color:#f0f2f5;
-    padding:8px;
-    cursor:pointer;
-}
-
-.vaw{
-    position: relative;
-    top:-40px;
-    left:300px;
-    width:20%;
-    line-break: anywhere;
-    text-align: center;
-    background-color: #161513;
-    color:#f0f2f5;
-    border: 1px solid #f0f2f5;
-    border-radius:15px;
-    padding:8px;
-    cursor:pointer;
-}
-
-img{
-    position:relative;
-    left:800px;
-    top:-400px;
-    border-radius: 5px;
-}
+.home-container {
+                    min-height: 100vh;
+                    background-color: #161513;
+                    color: #edeff2;
+                    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+                }
+                
+                .hero-section {
+                    min-height: 100vh;
+                    display: flex;
+                    align-items: center;
+                    padding: 2rem;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                }
+                
+                .hero-content {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    gap: 4rem;
+                    align-items: center;
+                    width: 100%;
+                }
+                
+                .text-content {
+                    max-width: 600px;
+                }
+                
+                .hero-title {
+                    font-size: clamp(2rem, 5vw, 3rem);
+                    font-weight: 700;
+                    line-height: 1.2;
+                    margin-bottom: 1.5rem;
+                    color: #edeff2;
+                }
+                
+                .gradient-text {
+                    background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+                    -webkit-background-clip: text;
+                    background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                    color: transparent;
+                }
+                
+                .hero-description {
+                    font-size: clamp(1rem, 2vw, 1.125rem);
+                    line-height: 1.6;
+                    margin-bottom: 2.5rem;
+                    color: #edeff2;
+                    opacity: 0.9;
+                }
+                
+                .cta-buttons {
+                    display: flex;
+                    gap: 1rem;
+                    flex-wrap: wrap;
+                }
+                
+                .btn-primary {
+                    display: inline-block;
+                    padding: 0.75rem 1.5rem;
+                    background: linear-gradient(43deg, #4158D0 0%, #C850C0 46%, #FFCC70 100%);
+                    color: white;
+                    text-decoration: none;
+                    border-radius: 15px;
+                    font-weight: 600;
+                    transition: all 0.3s ease;
+                    text-align: center;
+                    min-width: 150px;
+                }
+                
+                .btn-primary:hover {
+                    transform: translateY(-2px);
+                    box-shadow: 0 8px 25px rgba(65, 88, 208, 0.3);
+                    color: white;
+                    text-decoration: none;
+                }
+                
+                .btn-secondary {
+                    display: inline-block;
+                    padding: 0.75rem 1.5rem;
+                    background: transparent;
+                    color: #edeff2;
+                    text-decoration: none;
+                    border: 1px solid #edeff2;
+                    border-radius: 15px;
+                    font-weight: 600;
+                    transition: all 0.3s ease;
+                    text-align: center;
+                    min-width: 150px;
+                }
+                
+                .btn-secondary:hover {
+                    background: #edeff2;
+                    color: #161513;
+                    transform: translateY(-2px);
+                    text-decoration: none;
+                }
+                
+                .hero-image {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+                
+                .profile-img {
+                    width: 100%;
+                    max-width: 400px;
+                    height: auto;
+                    aspect-ratio: 1;
+                    object-fit: cover;
+                    border-radius: 10px;
+                    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+                    transition: transform 0.3s ease;
+                }
+                
+                .profile-img:hover {
+                    transform: translateY(-10px);
+                }
+                
+                .project-placeholder,
+                .about-placeholder {
+                    padding: 4rem 2rem;
+                    text-align: center;
+                    max-width: 1200px;
+                    margin: 0 auto;
+                    border-top: 1px solid #333;
+                }
+                
+                /* Tablet Styles */
+                @media (max-width: 768px) {
+                    .hero-content {
+                        grid-template-columns: 1fr;
+                        gap: 2rem;
+                        text-align: center;
+                    }
+                    
+                    .hero-section {
+                        padding: 1rem;
+                        min-height: auto;
+                        padding-top: 4rem;
+                    }
+                    
+                    .text-content {
+                        order: 2;
+                    }
+                    
+                    .hero-image {
+                        order: 1;
+                    }
+                    
+                    .profile-img {
+                        max-width: 300px;
+                    }
+                    
+                    .cta-buttons {
+                        justify-content: center;
+                    }
+                }
+                
+                /* Mobile Styles */
+                @media (max-width: 480px) {
+                    .hero-section {
+                        padding: 1rem 0.5rem;
+                        padding-top: 2rem;
+                    }
+                    
+                    .hero-content {
+                        gap: 1.5rem;
+                    }
+                    
+                    .hero-title {
+                        font-size: 1.75rem;
+                    }
+                    
+                    .hero-description {
+                        font-size: 0.9rem;
+                        margin-bottom: 1.5rem;
+                    }
+                    
+                    .profile-img {
+                        max-width: 250px;
+                    }
+                    
+                    .cta-buttons {
+                        flex-direction: column;
+                        align-items: center;
+                        gap: 0.75rem;
+                    }
+                    
+                    .btn-primary,
+                    .btn-secondary {
+                        width: 100%;
+                        max-width: 200px;
+                    }
+                    
+                    .project-placeholder,
+                    .about-placeholder {
+                        padding: 2rem 1rem;
+                    }
+                }
+                
+                /* Large Desktop Styles */
+                @media (min-width: 1400px) {
+                    .hero-content {
+                        gap: 6rem;
+                    }
+                    
+                    .profile-img {
+                        max-width: 500px;
+                    }
+                }
